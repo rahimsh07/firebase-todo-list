@@ -98,7 +98,7 @@ export default function Home() {
   ) : (
     <main className="">
       <div
-        className="bg-black text-white w-44 py-4 mt-10 rounded-lg transition-transform hover:bg-black/[0.8] active:scale-90 flex items-center justify-center gap-2 font-medium shadow-md fixed bottom-5 right-5 cursor-pointer"
+        className="bg-black text-white w-40 py-4 mt-10 rounded-lg transition-transform hover:bg-black/[0.8] active:scale-90 flex items-center justify-center gap-2 font-medium shadow-md fixed bottom-5 right-5 cursor-pointer"
         onClick={signOut}
       >
         <GoSignOut size={18} />
@@ -107,8 +107,8 @@ export default function Home() {
       <div className="max-w-3xl mx-auto mt-10 p-8">
         <div className="bg-white -m-6 p-3 sticky top-0">
           <div className="flex justify-center flex-col items-center">
-            <span className="text-7xl mb-10">📝</span>
-            <h1 className="text-5xl md:text-7xl font-bold">ToooDooo's</h1>
+            <span className="text-6xl mb-8">📝</span>
+            <h1 className="text-4xl md:text-6xl font-bold">ToooDooo's</h1>
           </div>
           <div className="flex items-center gap-2 mt-10">
             <input
@@ -118,12 +118,12 @@ export default function Home() {
                 authUser.username ? authUser.username : "name"
               }, What to do Today?`}
               type="text"
-              className="font-semibold placeholder:text-gray-500 border-[2px] border-black h-[60px] grow shadow-sm rounded-md px-4 focus-visible:outline-yellow-400 text-lg transition-all duration-300"
+              className="font-semibold placeholder:text-gray-500 border-[2px] border-black h-[50px] grow shadow-sm rounded-md px-4 focus-visible:outline-yellow-400 text-lg transition-all duration-300"
               autoFocus
               onKeyUp={onKeyUp}
             />
             <button
-              className="w-[60px] h-[60px] rounded-md bg-black flex justify-center items-center cursor-pointer transition-all duration-300 hover:bg-black/[0.8]"
+              className="w-[50px] h-[50px] rounded-md bg-black flex justify-center items-center cursor-pointer transition-all duration-300 hover:bg-black/[0.8]"
               onClick={addTodo}
             >
               <AiOutlinePlus size={30} color="#fff" />
